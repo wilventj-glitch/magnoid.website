@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MAGNOID</title>
 
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
 
 *{
@@ -13,8 +16,12 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
-    font-family:Arial, sans-serif;
+    font-family:'Poppins', sans-serif;
     background:#FFF0CB;
     color:#333;
 }
@@ -23,7 +30,6 @@ body{
 
 header{
     background:#4C7031;
-    color:white;
     padding:80px 60px;
 }
 
@@ -31,7 +37,6 @@ header{
     max-width:1200px;
     margin:auto;
     min-height:250px;
-
     display:flex;
     align-items:center;
 }
@@ -41,30 +46,35 @@ header{
 }
 
 .hero-text h1{
-    font-size:5rem;
+    font-family:'Kalam', cursive;
+    font-size:6rem;
     color:#FFF0CB;
-    margin-bottom:10px;
+    line-height:1;
+    margin-bottom:15px;
 }
 
 .hero-text p{
-    font-size:1.8rem;
     color:#F49619;
-    font-weight:bold;
+    font-size:1.6rem;
+    font-weight:600;
 }
 
 /* NAVIGATION */
 
 nav{
     background:#AF7A1F;
-    padding:18px;
     text-align:center;
+    padding:18px;
+    position:sticky;
+    top:0;
 }
 
 nav a{
     color:#FFF0CB;
     text-decoration:none;
     margin:0 20px;
-    font-weight:bold;
+    font-weight:600;
+    transition:0.3s;
 }
 
 nav a:hover{
@@ -83,6 +93,7 @@ h2{
     color:#4C7031;
     margin-bottom:20px;
     text-align:center;
+    font-size:2rem;
 }
 
 /* CARDS */
@@ -92,14 +103,13 @@ h2{
     border-left:8px solid #F49619;
     padding:25px;
     border-radius:12px;
-    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
 
 .cards{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:20px;
-    margin-top:20px;
 }
 
 /* FOOTER */
@@ -115,6 +125,33 @@ footer p{
     margin:5px 0;
 }
 
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero{
+    min-height:auto;
+}
+
+.hero-text{
+    width:100%;
+}
+
+.hero-text h1{
+    font-size:4rem;
+}
+
+.hero-text p{
+    font-size:1.2rem;
+}
+
+nav a{
+    display:inline-block;
+    margin:8px;
+}
+
+}
+
 </style>
 </head>
 
@@ -122,12 +159,14 @@ footer p{
 
 <header>
     <div class="hero">
+
         <div class="hero-text">
             <h1>MAGNOID</h1>
             <p>The Magnetic Way to a Cleaner Home</p>
         </div>
 
-        <!-- Empty space reserved for logo -->
+        <!-- Logo will go here later -->
+
     </div>
 </header>
 
@@ -144,10 +183,10 @@ footer p{
 
     <div class="card">
         <p>
-            MAGNOID is a student organization dedicated to promoting
-            cleanliness, responsibility, and sustainable living.
-            Through teamwork, innovation, and community involvement,
-            we strive to inspire people to create cleaner and healthier homes.
+            MAGNOID is a student organization dedicated to promoting cleanliness,
+            responsibility, and sustainable living. Through teamwork,
+            innovation, and community involvement, we inspire people
+            to create cleaner and healthier homes.
         </p>
     </div>
 
@@ -159,6 +198,7 @@ footer p{
 
         <div class="card" id="vision">
             <h2>Vision</h2>
+
             <p>
                 To inspire and empower individuals to embrace cleaner habits
                 and create a sustainable future for all.
@@ -167,6 +207,7 @@ footer p{
 
         <div class="card" id="mission">
             <h2>Mission</h2>
+
             <p>
                 To promote cleanliness, environmental awareness,
                 and community involvement through meaningful initiatives.
@@ -175,6 +216,7 @@ footer p{
 
         <div class="card">
             <h2>Values</h2>
+
             <p>
                 Responsibility, teamwork, respect, innovation,
                 and dedication guide everything we do.
