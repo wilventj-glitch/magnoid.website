@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Magnoid</title>
+<title>MAGNOID</title>
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -14,137 +15,192 @@
 
 body{
     font-family:Arial, sans-serif;
-    line-height:1.6;
-    background:#f9f9f9;
+    background:#FFF0CB;
     color:#333;
 }
 
+/* HEADER */
+
 header{
-    background:linear-gradient(135deg,#ff8c00,#2e8b57);
+    background:#4C7031;
     color:white;
-    text-align:center;
-    padding:80px 20px;
+    padding:80px 60px;
 }
 
-header h1{
-    font-size:3rem;
+.hero{
+    max-width:1200px;
+    margin:auto;
+    min-height:250px;
+
+    display:flex;
+    align-items:center;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:5rem;
+    color:#FFF0CB;
     margin-bottom:10px;
 }
 
-header p{
-    font-size:1.2rem;
-}
-
-nav{
-    background:#2e8b57;
-    text-align:center;
-    padding:15px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 15px;
+.hero-text p{
+    font-size:1.8rem;
+    color:#F49619;
     font-weight:bold;
 }
 
-section{
-    max-width:1000px;
-    margin:auto;
-    padding:50px 20px;
+/* NAVIGATION */
+
+nav{
+    background:#AF7A1F;
+    padding:18px;
+    text-align:center;
 }
 
-.card{
-    background:white;
-    padding:25px;
-    margin-top:20px;
-    border-radius:12px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+nav a{
+    color:#FFF0CB;
+    text-decoration:none;
+    margin:0 20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#F49619;
+}
+
+/* SECTIONS */
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
 }
 
 h2{
-    color:#ff8c00;
-    margin-bottom:15px;
+    color:#4C7031;
+    margin-bottom:20px;
+    text-align:center;
 }
 
-ul{
-    margin-left:20px;
+/* CARDS */
+
+.card{
+    background:white;
+    border-left:8px solid #F49619;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
 }
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+/* FOOTER */
 
 footer{
-    background:#222;
-    color:white;
+    background:#4C7031;
+    color:#FFF0CB;
     text-align:center;
-    padding:20px;
+    padding:30px;
 }
+
+footer p{
+    margin:5px 0;
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-    <h1>MAGNOID</h1>
-    <p>Empowering Students. Building Leaders. Creating Impact.</p>
+    <div class="hero">
+        <div class="hero-text">
+            <h1>MAGNOID</h1>
+            <p>The Magnetic Way to a Cleaner Home</p>
+        </div>
+
+        <!-- Empty space reserved for logo -->
+    </div>
 </header>
 
 <nav>
     <a href="#about">About</a>
-    <a href="#vision">Vision & Mission</a>
-    <a href="#events">Events</a>
+    <a href="#vision">Vision</a>
+    <a href="#mission">Mission</a>
     <a href="#contact">Contact</a>
 </nav>
 
 <section id="about">
+
+    <h2>About MAGNOID</h2>
+
     <div class="card">
-        <h2>About Us</h2>
         <p>
-            Magnoid is a student organization dedicated to developing leadership,
-            teamwork, creativity, and service. We provide opportunities for
-            students to grow through events, projects, and community engagement.
+            MAGNOID is a student organization dedicated to promoting
+            cleanliness, responsibility, and sustainable living.
+            Through teamwork, innovation, and community involvement,
+            we strive to inspire people to create cleaner and healthier homes.
         </p>
     </div>
+
 </section>
 
-<section id="vision">
-    <div class="card">
-        <h2>Vision</h2>
-        <p>
-            To inspire students to become confident leaders who create positive
-            change in their school and community.
-        </p>
+<section>
 
-        <h2 style="margin-top:20px;">Mission</h2>
-        <ul>
-            <li>Develop leadership skills.</li>
-            <li>Encourage teamwork and responsibility.</li>
-            <li>Organize meaningful activities and events.</li>
-            <li>Promote service and community involvement.</li>
-        </ul>
-    </div>
-</section>
+    <div class="cards">
 
-<section id="events">
-    <div class="card">
-        <h2>Upcoming Events</h2>
-        <ul>
-            <li>Leadership Workshop</li>
-            <li>Community Service Project</li>
-            <li>Student Gathering</li>
-            <li>Annual Organization Meeting</li>
-        </ul>
+        <div class="card" id="vision">
+            <h2>Vision</h2>
+            <p>
+                To inspire and empower individuals to embrace cleaner habits
+                and create a sustainable future for all.
+            </p>
+        </div>
+
+        <div class="card" id="mission">
+            <h2>Mission</h2>
+            <p>
+                To promote cleanliness, environmental awareness,
+                and community involvement through meaningful initiatives.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Values</h2>
+            <p>
+                Responsibility, teamwork, respect, innovation,
+                and dedication guide everything we do.
+            </p>
+        </div>
+
     </div>
+
 </section>
 
 <section id="contact">
+
+    <h2>Contact Us</h2>
+
     <div class="card">
-        <h2>Contact Us</h2>
-        <p>Email: magnoid@example.com</p>
-        <p>Instagram: @magnoid</p>
+        <p><strong>Email:</strong> magnoid@example.com</p>
+        <br>
+        <p><strong>Instagram:</strong> @magnoid</p>
     </div>
+
 </section>
 
 <footer>
-    © 2026 MAGNOID Student Organization
+    <p><strong>MAGNOID</strong></p>
+    <p>The Magnetic Way to a Cleaner Home</p>
+    <p>© 2026 MAGNOID. All Rights Reserved.</p>
 </footer>
 
 </body>
