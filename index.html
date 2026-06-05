@@ -24,6 +24,7 @@ body{
     font-family:'Poppins', sans-serif;
     background:#FFF0CB;
     color:#333;
+    padding-top:60px;
 }
 
 /* HEADER */
@@ -31,13 +32,14 @@ body{
 header{
     background:#4C7031;
     color:white;
-    padding:80px 60px;
+    padding:40px 60px;
 }
 
 .hero{
     max-width:1200px;
     margin:auto;
-    min-height:250px;
+    min-height:140px;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -51,16 +53,16 @@ header{
     font-size:5rem;
     font-weight:700;
     color:#FFF0CB;
-    margin-bottom:10px;
+    margin-bottom:0;
+    line-height:1;
 }
 
 .hero-text p{
     font-size:1.5rem;
     color:#F49619;
     font-weight:600;
+    margin-top:5px;
 }
-
-/* Empty logo space */
 
 .hero-logo{
     width:40%;
@@ -72,8 +74,12 @@ nav{
     background:#AF7A1F;
     padding:18px;
     text-align:center;
-    position:sticky;
+
+    position:fixed;
     top:0;
+    left:0;
+    width:100%;
+
     z-index:1000;
 }
 
@@ -94,7 +100,7 @@ section{
     max-width:1100px;
     margin:auto;
     padding:60px 20px;
-    scroll-margin-top:70px;
+    scroll-margin-top:60px;
 }
 
 h2{
@@ -158,6 +164,13 @@ nav a{
 
 <body>
 
+<nav>
+    <a href="#about">About</a>
+    <a href="#vision">Vision</a>
+    <a href="#mission">Mission</a>
+    <a href="#contact">Contact</a>
+</nav>
+
 <header>
     <div class="hero">
 
@@ -175,13 +188,6 @@ nav a{
 ```
 
 </header>
-
-<nav>
-    <a href="#about">About</a>
-    <a href="#vision">Vision</a>
-    <a href="#mission">Mission</a>
-    <a href="#contact">Contact</a>
-</nav>
 
 <section id="about">
     <h2>About MAGNOID</h2>
