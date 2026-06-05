@@ -9,7 +9,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-
 *{
     margin:0;
     padding:0;
@@ -27,7 +26,7 @@ body{
     padding-top:80px;
 }
 
-/* NAVIGATION BAR */
+/* NAVIGATION */
 
 nav{
     position:fixed;
@@ -43,7 +42,6 @@ nav{
     max-width:1200px;
     margin:auto;
     padding:18px 30px;
-
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -67,7 +65,7 @@ nav{
     color:#F49619;
 }
 
-/* HEADER */
+/* HERO */
 
 header{
     background:#4C7031;
@@ -79,14 +77,9 @@ header{
     max-width:1200px;
     margin:auto;
     min-height:140px;
-
     display:flex;
     justify-content:space-between;
     align-items:center;
-}
-
-.hero-text{
-    width:50%;
 }
 
 .hero-text h1{
@@ -102,10 +95,6 @@ header{
     color:#F49619;
     font-weight:600;
     margin-top:5px;
-}
-
-.hero-logo{
-    width:40%;
 }
 
 /* SECTIONS */
@@ -129,6 +118,7 @@ h2{
     padding:25px;
     border-radius:12px;
     box-shadow:0 3px 10px rgba(0,0,0,0.08);
+    line-height:1.8;
 }
 
 /* FOOTER */
@@ -145,41 +135,31 @@ footer{
 
 @media(max-width:768px){
 
-    .nav-container{
-        flex-direction:column;
-    }
-
-    .nav-links{
-        margin-top:10px;
-    }
-
-    .nav-links a{
-        margin:0 10px;
-    }
-
-    .hero{
-        flex-direction:column;
-        text-align:center;
-    }
-
-    .hero-text{
-        width:100%;
-    }
-
-    .hero-logo{
-        width:100%;
-    }
-
-    .hero-text h1{
-        font-size:3.5rem;
-    }
-
-    .hero-text p{
-        font-size:1.2rem;
-    }
-
+.nav-container{
+    flex-direction:column;
 }
 
+.nav-links{
+    margin-top:10px;
+}
+
+.nav-links a{
+    margin:0 10px;
+}
+
+.hero{
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:3.5rem;
+}
+
+.hero-text p{
+    font-size:1.2rem;
+}
+
+}
 </style>
 
 </head>
@@ -194,8 +174,8 @@ footer{
     </div>
 
     <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#vision">Vision</a>
+        <a href="#products">Products</a>
+        <a href="#instructions">Instructions</a>
         <a href="#mission">Mission</a>
         <a href="#contact">Contact</a>
     </div>
@@ -212,55 +192,61 @@ footer{
         <p>The Magnetic Way to a Cleaner Home</p>
     </div>
 
-    <div class="hero-logo">
-        <!-- Future logo goes here -->
-    </div>
-
 </div>
 
 </header>
 
-<section id="about">
-    <h2>About MAGNOID</h2>
+<section id="products">
+    <h2>Our Products</h2>
 
-```
 <div class="card">
     <p>
-        MAGNOID is a student organization dedicated to promoting
-        cleanliness, responsibility, and sustainable living.
-        Through teamwork, innovation, and community involvement,
-        we strive to inspire people to create cleaner and healthier homes.
+        MAGNOBOT is an innovative cleaning robot designed to make
+        household cleaning easier, faster, and more efficient.
+        Using smart movement and magnetic technology, MAGNOBOT helps
+        collect dust and debris while reducing the effort needed to
+        maintain a clean home.
     </p>
 </div>
-```
 
 </section>
 
-<section id="vision">
-    <h2>Vision</h2>
+<section id="instructions">
+    <h2>How to Use MAGNOBOT</h2>
 
-```
 <div class="card">
     <p>
-        To inspire and empower individuals to embrace cleaner habits
-        and create a sustainable future for all.
+        <strong>Step 1:</strong> Place MAGNOBOT on a flat surface.
+        <br><br>
+
+        <strong>Step 2:</strong> Turn on the power switch.
+        <br><br>
+
+        <strong>Step 3:</strong> Position MAGNOBOT in the area that needs cleaning.
+        <br><br>
+
+        <strong>Step 4:</strong> Allow MAGNOBOT to move and collect dust and debris.
+        <br><br>
+
+        <strong>Step 5:</strong> Empty the collection compartment after use.
+        <br><br>
+
+        <strong>Step 6:</strong> Recharge the device when the battery is low.
     </p>
 </div>
-```
 
 </section>
 
 <section id="mission">
     <h2>Mission</h2>
 
-```
 <div class="card">
     <p>
-        To promote cleanliness, environmental awareness,
-        and community involvement through meaningful initiatives.
+        To develop innovative cleaning solutions that encourage
+        cleanliness, convenience, and sustainability while helping
+        households maintain healthier living environments.
     </p>
 </div>
-```
 
 </section>
 
