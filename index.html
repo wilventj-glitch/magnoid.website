@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MAGNOID</title>
 
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -14,10 +14,6 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
 }
 
 body{
@@ -30,6 +26,7 @@ body{
 
 header{
     background:#4C7031;
+    color:white;
     padding:80px 60px;
 }
 
@@ -37,7 +34,9 @@ header{
     max-width:1200px;
     margin:auto;
     min-height:250px;
+
     display:flex;
+    justify-content:space-between;
     align-items:center;
 }
 
@@ -46,27 +45,30 @@ header{
 }
 
 .hero-text h1{
-    font-family:'Kalam', cursive;
-    font-size:6rem;
+    font-size:5rem;
+    font-weight:700;
     color:#FFF0CB;
-    line-height:1;
-    margin-bottom:15px;
+    margin-bottom:10px;
 }
 
 .hero-text p{
+    font-size:1.5rem;
     color:#F49619;
-    font-size:1.6rem;
     font-weight:600;
+}
+
+/* Empty logo space for future use */
+
+.hero-logo{
+    width:40%;
 }
 
 /* NAVIGATION */
 
 nav{
     background:#AF7A1F;
-    text-align:center;
     padding:18px;
-    position:sticky;
-    top:0;
+    text-align:center;
 }
 
 nav a{
@@ -74,7 +76,6 @@ nav a{
     text-decoration:none;
     margin:0 20px;
     font-weight:600;
-    transition:0.3s;
 }
 
 nav a:hover{
@@ -93,17 +94,14 @@ h2{
     color:#4C7031;
     margin-bottom:20px;
     text-align:center;
-    font-size:2rem;
 }
-
-/* CARDS */
 
 .card{
     background:white;
     border-left:8px solid #F49619;
     padding:25px;
     border-radius:12px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
 }
 
 .cards{
@@ -121,37 +119,6 @@ footer{
     padding:30px;
 }
 
-footer p{
-    margin:5px 0;
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-.hero{
-    min-height:auto;
-}
-
-.hero-text{
-    width:100%;
-}
-
-.hero-text h1{
-    font-size:4rem;
-}
-
-.hero-text p{
-    font-size:1.2rem;
-}
-
-nav a{
-    display:inline-block;
-    margin:8px;
-}
-
-}
-
 </style>
 </head>
 
@@ -165,7 +132,9 @@ nav a{
             <p>The Magnetic Way to a Cleaner Home</p>
         </div>
 
-        <!-- Logo will go here later -->
+        <div class="hero-logo">
+            <!-- Future logo goes here -->
+        </div>
 
     </div>
 </header>
@@ -178,18 +147,16 @@ nav a{
 </nav>
 
 <section id="about">
-
     <h2>About MAGNOID</h2>
 
     <div class="card">
         <p>
-            MAGNOID is a student organization dedicated to promoting cleanliness,
-            responsibility, and sustainable living. Through teamwork,
-            innovation, and community involvement, we inspire people
-            to create cleaner and healthier homes.
+            MAGNOID is a student organization dedicated to promoting
+            cleanliness, responsibility, and sustainable living.
+            Through teamwork, innovation, and community involvement,
+            we strive to inspire people to create cleaner and healthier homes.
         </p>
     </div>
-
 </section>
 
 <section>
@@ -198,7 +165,6 @@ nav a{
 
         <div class="card" id="vision">
             <h2>Vision</h2>
-
             <p>
                 To inspire and empower individuals to embrace cleaner habits
                 and create a sustainable future for all.
@@ -207,7 +173,6 @@ nav a{
 
         <div class="card" id="mission">
             <h2>Mission</h2>
-
             <p>
                 To promote cleanliness, environmental awareness,
                 and community involvement through meaningful initiatives.
@@ -216,7 +181,6 @@ nav a{
 
         <div class="card">
             <h2>Values</h2>
-
             <p>
                 Responsibility, teamwork, respect, innovation,
                 and dedication guide everything we do.
@@ -242,7 +206,6 @@ nav a{
 <footer>
     <p><strong>MAGNOID</strong></p>
     <p>The Magnetic Way to a Cleaner Home</p>
-    <p>© 2026 MAGNOID. All Rights Reserved.</p>
 </footer>
 
 </body>
