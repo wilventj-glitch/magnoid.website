@@ -1,26 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Magnoid</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 100px;
-            background-color: #f5f5f5;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magnoid</title>
 
-        h1 {
-            color: #333;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        p {
-            font-size: 20px;
-        }
-    </style>
+body{
+    font-family:Arial, sans-serif;
+    line-height:1.6;
+    background:#f9f9f9;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#ff8c00,#2e8b57);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.2rem;
+}
+
+nav{
+    background:#2e8b57;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+section{
+    max-width:1000px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    margin-top:20px;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:#ff8c00;
+    margin-bottom:15px;
+}
+
+ul{
+    margin-left:20px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
 </head>
+
 <body>
-    <h1>Welcome to Magnoid!</h1>
-    <p>This website was created using GitHub Pages.</p>
+
+<header>
+    <h1>MAGNOID</h1>
+    <p>Empowering Students. Building Leaders. Creating Impact.</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#vision">Vision & Mission</a>
+    <a href="#events">Events</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <div class="card">
+        <h2>About Us</h2>
+        <p>
+            Magnoid is a student organization dedicated to developing leadership,
+            teamwork, creativity, and service. We provide opportunities for
+            students to grow through events, projects, and community engagement.
+        </p>
+    </div>
+</section>
+
+<section id="vision">
+    <div class="card">
+        <h2>Vision</h2>
+        <p>
+            To inspire students to become confident leaders who create positive
+            change in their school and community.
+        </p>
+
+        <h2 style="margin-top:20px;">Mission</h2>
+        <ul>
+            <li>Develop leadership skills.</li>
+            <li>Encourage teamwork and responsibility.</li>
+            <li>Organize meaningful activities and events.</li>
+            <li>Promote service and community involvement.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="events">
+    <div class="card">
+        <h2>Upcoming Events</h2>
+        <ul>
+            <li>Leadership Workshop</li>
+            <li>Community Service Project</li>
+            <li>Student Gathering</li>
+            <li>Annual Organization Meeting</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="card">
+        <h2>Contact Us</h2>
+        <p>Email: magnoid@example.com</p>
+        <p>Instagram: @magnoid</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 MAGNOID Student Organization
+</footer>
+
 </body>
 </html>
