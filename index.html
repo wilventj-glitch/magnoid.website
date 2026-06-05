@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -78,7 +79,6 @@ header{
     margin:auto;
     min-height:140px;
     display:flex;
-    justify-content:space-between;
     align-items:center;
 }
 
@@ -87,7 +87,6 @@ header{
     font-weight:700;
     color:#FFF0CB;
     line-height:1;
-    margin-bottom:0;
 }
 
 .hero-text p{
@@ -100,7 +99,7 @@ header{
 /* SECTIONS */
 
 section{
-    max-width:1100px;
+    max-width:1200px;
     margin:auto;
     padding:60px 20px;
     scroll-margin-top:90px;
@@ -108,8 +107,8 @@ section{
 
 h2{
     color:#4C7031;
-    margin-bottom:20px;
     text-align:center;
+    margin-bottom:30px;
 }
 
 .card{
@@ -119,6 +118,46 @@ h2{
     border-radius:12px;
     box-shadow:0 3px 10px rgba(0,0,0,0.08);
     line-height:1.8;
+}
+
+/* PRODUCTS */
+
+.products-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.product-card{
+    width:450px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-5px);
+}
+
+.product-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.product-card h3{
+    text-align:center;
+    color:#4C7031;
+    margin:20px 0 10px;
+}
+
+.product-card p{
+    padding:0 20px 25px;
+    text-align:center;
+    line-height:1.6;
 }
 
 /* FOOTER */
@@ -135,31 +174,35 @@ footer{
 
 @media(max-width:768px){
 
-.nav-container{
-    flex-direction:column;
+    .nav-container{
+        flex-direction:column;
+    }
+
+    .nav-links{
+        margin-top:10px;
+    }
+
+    .nav-links a{
+        margin:0 10px;
+    }
+
+    .hero{
+        text-align:center;
+    }
+
+    .hero-text h1{
+        font-size:3.5rem;
+    }
+
+    .hero-text p{
+        font-size:1.2rem;
+    }
+
+    .product-card{
+        width:100%;
+    }
 }
 
-.nav-links{
-    margin-top:10px;
-}
-
-.nav-links a{
-    margin:0 10px;
-}
-
-.hero{
-    text-align:center;
-}
-
-.hero-text h1{
-    font-size:3.5rem;
-}
-
-.hero-text p{
-    font-size:1.2rem;
-}
-
-}
 </style>
 
 </head>
@@ -168,53 +211,74 @@ footer{
 
 <nav>
     <div class="nav-container">
+        <div class="nav-logo">MAGNOID</div>
 
-    <div class="nav-logo">
-        MAGNOID
-    </div>
-
+```
     <div class="nav-links">
         <a href="#products">Products</a>
         <a href="#instructions">Instructions</a>
         <a href="#mission">Mission</a>
         <a href="#contact">Contact</a>
     </div>
-
 </div>
+```
 
 </nav>
 
 <header>
     <div class="hero">
-
-    <div class="hero-text">
-        <h1>MAGNOID</h1>
-        <p>The Magnetic Way to a Cleaner Home</p>
+        <div class="hero-text">
+            <h1>MAGNOID</h1>
+            <p>The Magnetic Way to a Cleaner Home</p>
+        </div>
     </div>
-
-</div>
-
 </header>
 
 <section id="products">
-    <h2>Our Products</h2>
 
-<div class="card">
-    <p>
-        MAGNOBOT is an innovative cleaning robot designed to make
-        household cleaning easier, faster, and more efficient.
-        Using smart movement and magnetic technology, MAGNOBOT helps
-        collect dust and debris while reducing the effort needed to
-        maintain a clean home.
-    </p>
+```
+<h2>Our Products</h2>
+
+<div class="products-container">
+
+    <div class="product-card">
+        <img src="magnobot.jpg" alt="MAGNOBOT">
+
+        <h3>MAGNOBOT</h3>
+
+        <p>
+            MAGNOBOT is a smart cleaning robot designed to help
+            households maintain cleanliness with minimal effort.
+            Its innovative design allows it to collect dust and
+            debris efficiently while saving time and energy.
+        </p>
+    </div>
+
+    <div class="product-card">
+        <img src="magic-liquid.jpg" alt="Magic Liquid">
+
+        <h3>Magic Liquid</h3>
+
+        <p>
+            Magic Liquid is a specially formulated cleaning solution
+            that removes dirt and stains effectively while remaining
+            safe for everyday household use. It works perfectly
+            alongside MAGNOBOT.
+        </p>
+    </div>
+
 </div>
+```
 
 </section>
 
 <section id="instructions">
-    <h2>How to Use MAGNOBOT</h2>
+
+```
+<h2>How to Use MAGNOBOT</h2>
 
 <div class="card">
+
     <p>
         <strong>Step 1:</strong> Place MAGNOBOT on a flat surface.
         <br><br>
@@ -225,39 +289,47 @@ footer{
         <strong>Step 3:</strong> Position MAGNOBOT in the area that needs cleaning.
         <br><br>
 
-        <strong>Step 4:</strong> Allow MAGNOBOT to move and collect dust and debris.
+        <strong>Step 4:</strong> Allow MAGNOBOT to collect dust and debris.
         <br><br>
 
         <strong>Step 5:</strong> Empty the collection compartment after use.
         <br><br>
 
-        <strong>Step 6:</strong> Recharge the device when the battery is low.
+        <strong>Step 6:</strong> Recharge when the battery is low.
     </p>
+
 </div>
+```
 
 </section>
 
 <section id="mission">
-    <h2>Mission</h2>
+
+```
+<h2>Mission</h2>
 
 <div class="card">
     <p>
-        To develop innovative cleaning solutions that encourage
+        To develop innovative cleaning solutions that promote
         cleanliness, convenience, and sustainability while helping
         households maintain healthier living environments.
     </p>
 </div>
+```
 
 </section>
 
 <section id="contact">
-    <h2>Contact Us</h2>
+
+```
+<h2>Contact Us</h2>
 
 <div class="card">
     <p><strong>Email:</strong> magnoid@example.com</p>
     <br>
     <p><strong>Instagram:</strong> @magnoid</p>
 </div>
+```
 
 </section>
 
@@ -268,3 +340,4 @@ footer{
 
 </body>
 </html>
+
