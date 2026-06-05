@@ -1,5 +1,5 @@
-```html
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -14,6 +14,10 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
@@ -57,7 +61,7 @@ header{
     font-weight:600;
 }
 
-/* Empty logo space for future use */
+/* Empty logo space */
 
 .hero-logo{
     width:40%;
@@ -69,6 +73,9 @@ nav{
     background:#AF7A1F;
     padding:18px;
     text-align:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
 nav a{
@@ -88,6 +95,7 @@ section{
     max-width:1100px;
     margin:auto;
     padding:60px 20px;
+    scroll-margin-top:80px;
 }
 
 h2{
@@ -119,7 +127,40 @@ footer{
     padding:30px;
 }
 
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text{
+    width:100%;
+}
+
+.hero-logo{
+    width:100%;
+}
+
+.hero-text h1{
+    font-size:3.5rem;
+}
+
+.hero-text p{
+    font-size:1.2rem;
+}
+
+nav a{
+    display:inline-block;
+    margin:8px;
+}
+
+}
+
 </style>
+
 </head>
 
 <body>
@@ -127,16 +168,19 @@ footer{
 <header>
     <div class="hero">
 
-        <div class="hero-text">
-            <h1>MAGNOID</h1>
-            <p>The Magnetic Way to a Cleaner Home</p>
-        </div>
-
-        <div class="hero-logo">
-            <!-- Future logo goes here -->
-        </div>
-
+```
+    <div class="hero-text">
+        <h1>MAGNOID</h1>
+        <p>The Magnetic Way to a Cleaner Home</p>
     </div>
+
+    <div class="hero-logo">
+        <!-- Future logo goes here -->
+    </div>
+
+</div>
+```
+
 </header>
 
 <nav>
@@ -149,57 +193,64 @@ footer{
 <section id="about">
     <h2>About MAGNOID</h2>
 
-    <div class="card">
-        <p>
-            MAGNOID is a student organization dedicated to promoting
-            cleanliness, responsibility, and sustainable living.
-            Through teamwork, innovation, and community involvement,
-            we strive to inspire people to create cleaner and healthier homes.
-        </p>
-    </div>
+```
+<div class="card">
+    <p>
+        MAGNOID is a student organization dedicated to promoting
+        cleanliness, responsibility, and sustainable living.
+        Through teamwork, innovation, and community involvement,
+        we strive to inspire people to create cleaner and healthier homes.
+    </p>
+</div>
+```
+
 </section>
 
 <section>
 
-    <div class="cards">
+```
+<div class="cards">
 
-        <div class="card" id="vision">
-            <h2>Vision</h2>
-            <p>
-                To inspire and empower individuals to embrace cleaner habits
-                and create a sustainable future for all.
-            </p>
-        </div>
-
-        <div class="card" id="mission">
-            <h2>Mission</h2>
-            <p>
-                To promote cleanliness, environmental awareness,
-                and community involvement through meaningful initiatives.
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>Values</h2>
-            <p>
-                Responsibility, teamwork, respect, innovation,
-                and dedication guide everything we do.
-            </p>
-        </div>
-
+    <div class="card" id="vision">
+        <h2>Vision</h2>
+        <p>
+            To inspire and empower individuals to embrace cleaner habits
+            and create a sustainable future for all.
+        </p>
     </div>
+
+    <div class="card" id="mission">
+        <h2>Mission</h2>
+        <p>
+            To promote cleanliness, environmental awareness,
+            and community involvement through meaningful initiatives.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Values</h2>
+        <p>
+            Responsibility, teamwork, respect, innovation,
+            and dedication guide everything we do.
+        </p>
+    </div>
+
+</div>
+```
 
 </section>
 
 <section id="contact">
 
-    <h2>Contact Us</h2>
+```
+<h2>Contact Us</h2>
 
-    <div class="card">
-        <p><strong>Email:</strong> magnoid@example.com</p>
-        <br>
-        <p><strong>Instagram:</strong> @magnoid</p>
-    </div>
+<div class="card">
+    <p><strong>Email:</strong> magnoid@example.com</p>
+    <br>
+    <p><strong>Instagram:</strong> @magnoid</p>
+</div>
+```
 
 </section>
 
@@ -210,3 +261,4 @@ footer{
 
 </body>
 </html>
+
